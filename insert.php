@@ -8,7 +8,7 @@ $gender=$_POST['gender'];
 $query="insert into dummy(name,email,password,mobile,gender)values('$name','$email','$password','$mobile','$gender')";
 $run=mysqli_query($con,$query);
 if ($run) {
-	echo "Data inserted successfully";
+	header('location:showdata.php?msg=Data inserted Successfully');
 }
 else{
 	echo "error in data insertion";
