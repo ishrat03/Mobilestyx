@@ -11,11 +11,11 @@ include 'header.php';
 					
 				</div>
 				<div class="col-md-6">
-					<form class="align-self-center" method="post" action="insert.php">
+					<form class="align-self-center" name="RegForm" method="post" action="insert.php" onsubmit="return validation()">
 						<div class="form-group row">
 							<label for="name" class="col-form-label">Name:</label>
-							<input type="text" id="name" name="name" class="form-control" placeholder="Full Name" onkeyup="validation()">
-							<div id="nameerror" style="display: none;" class="input-group-append"><span class="input-group-text"><i class="far fa-check-circle"></i> Ok</span></div>
+							<input type="text" id="name" name="name" class="form-control" placeholder="Full Name" min="3" max="50">
+							<div id="nameerror" style="display: none;" class="input-group-append"><span class="input-group-text alert alert-success"><i class="far fa-check-circle"></i> Ok</span></div>
 						</div>
 						<div class="form-group row">
 							<label for="email" class="col-form-label">Email:</label>
@@ -23,7 +23,7 @@ include 'header.php';
 						</div>
 						<div class="form-group row">
 							<label for="password" class="col-form-label">Password:</label>
-							<input type="password" name="password" class="form-control" placeholder="Password">
+							<input type="password" name="password" class="form-control" placeholder="Password" min="6">
 						</div>
 						<div class="form-group row">
 							<label for="mobile" class="col-form-label">Mobile:</label>
