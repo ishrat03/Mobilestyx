@@ -1,6 +1,13 @@
-<?php
-include 'header.php';
-?>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index Page</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<script src="validation.js"></script>
+</head>
+<body>
+<div class="container-fluid">
 	<div class="card align-content-lg-center mt-3">
 		<div class="card-header text-center">
 			<h3>Registration Form</h3>
