@@ -68,3 +68,21 @@ function validation()
    
     return true; 
 }
+
+function namevalidation()
+{
+	var a=/^[a-zA-Z ]*$/;
+	var name=document.getElementById('name').value;
+	if (a.test(name)==true) 
+	{
+		document.getElementById('nameerror').style.display="inline";
+		document.getElementById('nameerror1').style.display="none";
+		return true;
+  }
+  else
+  {
+  	document.getElementById('nameerror1').style.display="inline";
+  	document.getElementById('nameerror').style.display="none";
+  	return false;
+  }
+}

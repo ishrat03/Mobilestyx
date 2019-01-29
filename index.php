@@ -14,8 +14,12 @@ include 'header.php';
 					<form class="align-self-center" name="RegForm" method="post" action="insert.php" onsubmit="return validation()">
 						<div class="form-group row">
 							<label for="name" class="col-form-label">Name:</label>
-							<input type="text" id="name" name="name" class="form-control" placeholder="Full Name" min="3" max="50">
-							<div id="nameerror" style="display: none;" class="input-group-append"><span class="input-group-text alert alert-success"><i class="far fa-check-circle"></i> Ok</span></div>
+							<div class="input-group mb-3">
+								<input type="text" id="name" name="name" class="form-control" placeholder="Full Name" min="3" max="50" onkeyup="return namevalidation()">
+							<div id="nameerror" style="display: none;" class="input-group-append"><span class="input-group-text alert alert-success"><i class="far fa-check-circle"></i></span></div>
+							<div id="nameerror1" style="display: none;" class="input-group-append"><span class="input-group-text alert alert-danger"><i class="far fa-check-circle"></i></span></div>
+							</div>
+							
 						</div>
 						<div class="form-group row">
 							<label for="email" class="col-form-label">Email:</label>
