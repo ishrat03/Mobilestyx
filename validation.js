@@ -73,7 +73,7 @@ function namevalidation()
 {
 	var a=/^[a-zA-Z ]*$/;
 	var name=document.getElementById('name').value;
-	if (a.test(name)==true) 
+	if (a.test(name)==true &&name.length>3 && name.length<49) 
 	{
 		document.getElementById('nameerror').style.display="inline";
 		document.getElementById('nameerror1').style.display="none";
